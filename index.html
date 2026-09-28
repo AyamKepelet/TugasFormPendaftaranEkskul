@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelas X PPLG</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="open-sans-regular">
+    <div class="container">
+        <h2>Form Pendaftaran Ekskul<br>SMK Letris Pamulang</h2>
+        <form>
+            <div class="form-group">
+                <label for="User_inp1">Nama Lengkap:</label>
+                <input name="username" title="Name" id="User_inp1" placeholder="Masukkan nama siswa">
+            </div>
+            <div class="form-group">
+                <label for="Select-Kelas">Kelas:</label>
+                <div>
+                    <label><input type="radio" class="Select-Kelas" name="kelas" value="X"> X</label>
+                    <label><input type="radio" class="Select-Kelas" name="kelas" value="XI"> XI</label>
+                    <label><input type="radio" class="Select-Kelas" name="kelas" value="XII"> XII</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="Pilih-Jurusan">Jurusan:</label>
+                <select name="jurusan" id="Pilih-Jurusan">
+                    <option value="">-- Pilih Jurusan --</option>
+                    <option value="PPLG">PPLG</option>
+                    <option value="DKV">DKV</option>
+                    <option value="TJKT">TJKT</option>
+                    <option value="AKL">AKL</option>
+                    <option value="BDP">BDP</option>
+                    <option value="MPLB">MPLB</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="Pilih-Ekskul">Pilihan Ekskul:</label>
+                <select name="ekskul" id="Pilih-Ekskul">
+                    <option value="">-- Pilih Ekstrakurikuler --</option>
+                    <option value="animasi">animasi</option>
+                    <option value="paskibra">paskibra</option>
+                    <option value="volly">volly</option>
+                    <option value="basket">basket</option>
+                    <option value="futsal">futsal</option>
+                    <option value="letsin">letsin</option>
+                    <option value="pmr">pmr</option>
+                    <option value="dance modern">dance modern</option>
+                </select>
+            </div>
+
+            <input id="btn-Result" class="SubmitBtn" type="submit" value="Tambah Data">
+        </form>
+
+        <div class="header-action">
+            <h3 class="judul">Data Pendaftaran Siswa</h3>
+        </div>
+
+        <table id="table" class="result">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Nama</th>
+                    <th>Kelas</th>
+                    <th>Jurusan</th>
+                    <th>Ekskul</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody id="TableData">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
